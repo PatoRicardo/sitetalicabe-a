@@ -18,7 +18,7 @@ npm start        # sobe um servidor local com npx serve
 
 ## O quebra-cabeça
 
-A imagem `assets/img/puzzle/retrato.svg` é cortada em 4, 9 ou 16 peças, embaralhadas.
+A imagem `assets/img/puzzle/retrato.jpeg` é cortada em 4, 9 ou 16 peças, embaralhadas.
 Cada peça é um `<button>` com o recorte certo da foto, então a montagem reconstitui a
 fotografia sem transição. Para montar, use qualquer um destes modos:
 
@@ -60,19 +60,22 @@ Quase tudo está em `assets/js/data.js`:
 2. apontar `gallery[].src` (e `secrets[].gallery[].src`) para o novo arquivo
 3. deixar `alt` e `caption` escritos de verdade — são lidos em voz alta por leitores de tela
 
-Os arquivos atuais são SVG placeholders com fotos e legendas fictícias. PNG e JPG funcionam
-igual; basta atualizar os caminhos.
+Os arquivos atuais são as fotos de verdade, em JPEG. PNG e JPG funcionam igual; basta
+atualizar os caminhos.
 
 ### Trocar a foto do quebra-cabeça
 
-A imagem precisa ser **quadrada** (o site usa a proporção da imagem para o tabuleiro).
-Qualquer tamanho serve, mas 1200×1200 ou mais deixa as peças nítidas:
+O site tira a proporção do tabuleiro da própria imagem, então **qualquer formato serve** —
+retrato, paisagem ou quadrado. De preferência 1200px ou mais no lado menor, para as
+peças ficarem nítidas:
 
 ```js
 puzzle: {
-  photo: { src: 'assets/img/puzzle/retrato.svg', alt: '...' }
+  photo: { src: 'assets/img/puzzle/retrato.jpeg', alt: '...' }
 }
 ```
+
+Para forçar uma proporção em vez de usar a da imagem, acrescente `ratio: '4 / 5'`.
 
 A foto do quebra-cabeça não pode ser a mesma da galeria se a ideia é revelar algo novo —
 a galeria mostra as fotos, o quebra-cabeça é a surpresa.

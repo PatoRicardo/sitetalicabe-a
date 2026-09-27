@@ -511,13 +511,9 @@ window.Site.puzzle = (function () {
     } else {
       board.style.setProperty('--board-ratio', width + ' / ' + height);
     }
-
-    board.dataset.fit = width === height ? 'square' : (width > height ? 'landscape' : 'portrait');
   }
 
   function preload() {
-    if (!ready) return Promise.resolve(null);
-
     var sources = [(config.photo || {}).src].filter(Boolean);
 
     if (!sources.length) {

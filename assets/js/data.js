@@ -11,9 +11,10 @@ window.Site.data = {
       lead: 'Montei um cantinho com as suas fotos, com os versos que eu não consigo falar em voz alta e com um quebra-cabeça que escondi uma surpresa. Leva o tempo que precisar: tudo aqui foi feito com calma.',
       badges: ['fotos guardadas', 'versos escritos', 'uma surpresa no final'],
       photo: {
-        src: 'assets/img/photos/foto-1.svg',
-        alt: 'Foto de destaque no site',
-        caption: 'a foto que eu usaria de fundo de tela'
+        src: 'assets/img/photos/destaque.jpeg',
+        alt: 'A foto que eu usaria de fundo de tela',
+        caption: 'a foto que eu usaria de fundo de tela',
+        ratio: '0.75'
       }
     },
 
@@ -29,46 +30,46 @@ window.Site.data = {
   },
 
   photos: [
-    { src: 'assets/img/photos/foto-1.svg', alt: 'Placeholder da primeira foto', caption: 'aquele dia que não queria acabar', ratio: '4 / 5' },
-    { src: 'assets/img/photos/foto-2.svg', alt: 'Placeholder da segunda foto', caption: 'sorriso novo demais', ratio: '1 / 1' },
-    { src: 'assets/img/photos/foto-3.svg', alt: 'Placeholder da terceira foto', caption: 'luz de fim de tarde', ratio: '3 / 4' },
-    { src: 'assets/img/photos/foto-4.svg', alt: 'Placeholder da quarta foto', caption: 'a pazinha de sempre', ratio: '4 / 5' },
-    { src: 'assets/img/photos/foto-5.svg', alt: 'Placeholder da quinta foto', caption: 'noventa por cento de você, dez por cento de eu', ratio: '16 / 10' },
-    { src: 'assets/img/photos/foto-6.svg', alt: 'Placeholder da sexta foto', caption: 'prova de que a gente se dá bem', ratio: '1 / 1' }
+    { src: 'assets/img/photos/foto-1.jpeg', alt: 'A gente no dia que não queria acabar', caption: 'aquele dia que não queria acabar', ratio: '1.333' },
+    { src: 'assets/img/photos/foto-2.jpeg', alt: 'Seu sorriso novo demais', caption: 'sorriso novo demais', ratio: '1.876' },
+    { src: 'assets/img/photos/foto-3.jpeg', alt: 'A luz do fim de tarde', caption: 'luz de fim de tarde', ratio: '1.333' },
+    { src: 'assets/img/photos/foto-4.jpeg', alt: 'A pazinha de sempre', caption: 'a pazinha de sempre', ratio: '0.562' },
+    { src: 'assets/img/photos/foto-5.jpeg', alt: 'Noventa por cento você, dez por cento eu', caption: 'noventa por cento de você, dez por cento de eu', ratio: '0.45' },
+    { src: 'assets/img/photos/foto-6.jpeg', alt: 'Prova de que a gente se dá bem', caption: 'prova de que a gente se dá bem', ratio: '0.606' }
   ],
 
   hiddenPhotos: [
-    { src: 'assets/img/photos/secreta-1.svg', alt: 'Placeholder da foto secreta 1', caption: 'esta eu nunca mostrei pra ninguém', ratio: '4 / 5' },
-    { src: 'assets/img/photos/secreta-2.svg', alt: 'Placeholder da foto secreta 2', caption: 'o dia em que eu soube', ratio: '1 / 1' },
-    { src: 'assets/img/photos/secreta-3.svg', alt: 'Placeholder da foto secreta 3', caption: 'só nossa, de novo', ratio: '3 / 4' }
+    { src: 'assets/img/photos/secreta-1.jpeg', alt: 'Foto que eu nunca mostrei para ninguém', caption: 'esta eu nunca mostrei pra ninguém', ratio: '0.75' },
+    { src: 'assets/img/photos/secreta-2.jpeg', alt: 'O dia em que eu soube', caption: 'o dia em que eu soube', ratio: '0.75' },
+    { src: 'assets/img/photos/secreta-3.jpeg', alt: 'Só nossa, de novo', caption: 'só nossa, de novo', ratio: '1' }
   ],
 
   poems: [
     {
-      title: 'O jeito que você chega',
-      date: 'março',
-      body: 'Você entra sem bater\ne o silêncio da casa aprende a core.\n\nFica mais leve o ar,\nfica mais leve o meu pior dia.\n\nE eu finjo que não reparei\nem você já ter entrado.',
+      title: '2 de agosto de 2026',
+      date: 'agosto',
+      body: 'Há dias que parecem nascer\njá sabendo que serão lembrados.\n\n2 de agosto foi um deles.\n\nFomos ao museu,\nentre ossos, fósseis\ne animais que o tempo decidiu guardar,\nsem saber que, naquele dia,\neu também guardaria alguma coisa.\n\nTalvez tenha sido o jeito que você olhava,\nou a maneira como eu me sentia\nquando caminhava ao seu lado.\n\nNo começo,\neu só queria conhecer você.\n\nTalvez uma amizade.\nTalvez algumas conversas,\nalguns momentos,\nnada que eu pudesse chamar de destino.\n\nMas naquele dia\nalguma coisa mudou de lugar dentro de mim.\n\nEntre tudo aquilo que pertencia ao passado,\neu encontrei um sentimento\nque ainda nem sabia nomear.\n\nE foi estranho perceber\nque eu já não estava apenas gostando da sua companhia.\n\nEu estava começando a entender\nque era você.\n\nNão porque o mundo parou,\nnem porque alguma música tocou ao fundo,\nmas porque, pela primeira vez,\nestar ao lado de alguém\nparecia exatamente onde eu deveria estar.\n\nO museu guardava histórias\nde milhares, milhões de anos.\n\nE eu saí de lá\ncom a sensação de que tinha encontrado\na história que eu queria viver.\n\nEngraçado.\n\nEu fui ao museu\npara olhar aquilo que sobreviveu ao tempo.\n\nE encontrei você.\n\nDesde então,\nquando penso naquele dia,\nnão lembro primeiro dos animais,\ndos fósseis ou das vitrines.\n\nLembro de nós.\n\nDo primeiro passeio.\nDo começo de alguma coisa\nque eu nem sabia que procurava.\n\nE talvez seja por isso\nque 2 de agosto nunca será apenas uma data.\n\nPorque foi o dia em que\numa pessoa que eu conheci pensando em amizade\nse tornou, pouco a pouco,\na pessoa que eu mais amo\nem todo este universo.',
       author: 'eu'
     },
     {
-      title: 'Inventário',
-      date: 'abril',
-      body: 'Contei hoje as suas coisas:\n\num copo na mesa,\numa risada de quem acabou de ouvir uma piada boa,\num fio de cabelo no meu casaco,\na mania de fechar o que ninguém pediu.\n\nFiz a conta e deu o seguinte:\nguardar você custa pouco\ne vale todo o preço.',
+      title: 'Setembro tem o seu nome',
+      date: 'setembro',
+      body: 'Setembro tem qualquer coisa de você.\n\nTalvez seja a luz mais suave\ndas tardes que demoram a ir embora,\nou esse vento que passa sem avisar\ne bagunça tudo pelo caminho.\n\nMas acho que é mais simples.\n\nÉ que setembro me lembra você\nporque, de algum jeito,\ntudo parece mais bonito\nquando penso em você.\n\nPenso no seu sorriso\ne imediatamente o dia parece menos cinza.\n\nPenso na sua voz\ne até o silêncio fica confortável.\n\nPenso no seu jeito de olhar,\nnas pequenas coisas que você faz\nsem perceber que eu reparo,\ne me pergunto como alguém\npode carregar tanta beleza\nsem precisar tentar.\n\nEu gosto de imaginar\nque existe uma pequena versão sua\nescondida em cada coisa bonita\nque encontro por aí.\n\nNo céu quando ele fica bonito demais.\n\nNa música que eu escuto\ne penso que você gostaria.\n\nNa vontade repentina\nde contar alguma coisa para alguém\ne perceber que esse alguém\né sempre você.\n\nE talvez seja isso que eu mais gosto:\n\nvocê não precisa estar aqui\npara ocupar meus pensamentos.\n\nBasta setembro chegar,\nbasta uma tarde qualquer,\nbasta uma lembrança pequena,\n\ne pronto.\n\nLá está você novamente,\n\nmorando em algum canto de mim\ncomo se sempre tivesse pertencido ali.\n\nE se alguém me perguntasse\no que setembro significa,\n\neu poderia falar da primavera,\ndas flores,\ndos dias mais longos.\n\nMas provavelmente eu sorriria\ne não explicaria nada.\n\nPorque, para mim,\n\nsetembro tem o seu nome.',
       author: 'eu'
     },
     {
-      title: 'Promessa pequena',
-      date: 'maio',
-      body: 'Vou te dar as manhãs,\nque são a parte mais difícil do dia.\n\nVocê fica com o resto:\nas horas, a espera, a rua, o que sobrar.\n\nE nos dias em que eu não der conta de nada,\nme faz um café e me lembra\nde que eu já fiz isso antes —\nde quando era mais novo e tinha o dobro de tudo.',
+      title: 'Sonho Almejado',
+      date: 'toda vida',
+      body: 'Sonhei com o dia em que te encontraria,\nAnsiando teu olhar contemplar.\nVivi por toda a minha vida a almejar\nO dia em que eu finalmente iria te perguntar:\n\n“Você me ama?”\n\nE, ao ouvir que sim,\nAo saber que era verdade,\nNão pude fazer nada além\nDe te fazer minha majestade.\n\nE se o destino me permitisse,\nEu faria daquele instante eternidade,\nGuardaria teu sorriso em mim\nComo quem guarda a própria felicidade.\n\nPois de tanto esperar por você,\nEsqueci como era não te querer.\nE quando enfim pude te encontrar,\nPercebi que nunca foi sobre esperar:\n\nEra sobre, em algum lugar do mundo,\nHaver alguém que eu ainda não conhecia,\nMas que meu coração, antes de te encontrar,\nJá sabia que amaria.',
       author: 'eu'
     }
   ],
 
   puzzle: {
     photo: {
-      src: 'assets/img/puzzle/retrato.svg',
+      src: 'assets/img/puzzle/retrato.jpeg',
       label: 'A foto',
-      alt: 'Fotografia usada no quebra-cabeça'
+      alt: 'A fotografia que você vai montar no quebra-cabeça'
     },
     defaultSize: 3,
     hintsPerGame: 3,

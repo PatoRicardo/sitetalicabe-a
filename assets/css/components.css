@@ -228,7 +228,9 @@
 .poem-list {
   display: grid;
   gap: clamp(1.25rem, 3vw, 2.25rem);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  grid-template-columns: 1fr;
+  max-width: 44rem;
+  margin-inline: auto;
 }
 
 .poem {

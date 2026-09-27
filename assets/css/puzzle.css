@@ -66,9 +66,6 @@
   transition: box-shadow var(--t) var(--ease);
 }
 
-.board[data-fit="portrait"] { --board-ratio: 4 / 5; }
-.board[data-fit="landscape"] { --board-ratio: 5 / 4; }
-
 .board.is-solved {
   box-shadow:
     0 0 0 3px color-mix(in srgb, var(--gold-400) 60%, transparent),
@@ -199,10 +196,6 @@
   transform-origin: center;
   transition: none;
   will-change: translate;
-}
-
-.piece--ghost .piece__layer--photo {
-  opacity: 0;
 }
 
 .is-dragging-piece {
