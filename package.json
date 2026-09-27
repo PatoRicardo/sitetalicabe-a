@@ -1,0 +1,10 @@
+{
+  "name": "sitetalicabe-a",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site romantico estatico com galeria, poemas, quebra-cabeca de uma foto e uma area secreta.",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx --yes serve ."
+  }
+}
