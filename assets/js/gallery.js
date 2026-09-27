@@ -22,6 +22,10 @@ window.Site.gallery = (function () {
   }
 
   function zoomIcon() {
+    // o span e o que o CSS posiciona no canto; o svg sozinho ocuparia o card inteiro
+    var badge = document.createElement('span');
+    badge.className = 'photo__zoom';
+    badge.setAttribute('aria-hidden', 'true');
     var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('viewBox', '0 0 24 24');
     svg.setAttribute('fill', 'none');
@@ -31,7 +35,8 @@ window.Site.gallery = (function () {
     var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     path.setAttribute('d', 'M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm10 2-4.35-4.35M11 8v6M8 11h6');
     svg.appendChild(path);
-    return svg;
+    badge.appendChild(svg);
+    return badge;
   }
 
   function card(photo, key, position) {
